@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 # bin/compile <build-dir> <cache-dir>
 
+set -e # Fail immediately on non-zero exit code.
+set -o pipefail # Fail immediately on non-zero exit code within a pipeline.
+
 basedir="$( cd -P "$( dirname "$0" )" && pwd )" 
 
 
@@ -10,4 +13,6 @@ BUILD_DIR=$1
 CACHE_DIR=$2
 ENV_DIR=${3:-}
 
-echo $basedir
+echo "## start here $basedir $BUILD_DIR"
+
+echo "      done building with nextcloud buildpack"
