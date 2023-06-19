@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 # bin/compile <build-dir> <cache-dir>
 
+# Debug, echo every command
+if [[ -n "$BUILDPACK_DEBUG" ]]; then
+  set -x
+fi
+
 set -e # Fail immediately on non-zero exit code.
 set -o pipefail # Fail immediately on non-zero exit code within a pipeline.
 
