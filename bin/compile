@@ -14,9 +14,12 @@ basedir="$( cd -P "$( dirname "$0" )" && pwd )"
 
 echo "=====> Start building Nextcloud"
 
+echo "Nextcloud version : $NEXTCLOUD_VERSION"
+
 BUILD_DIR=$1
 CACHE_DIR=$2
 ENV_DIR=${3:-}
+
 
 echo "## start here $basedir $BUILD_DIR"
 

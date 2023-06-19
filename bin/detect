@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+set -x
 
-echo "nextcloud-buildpack"
+echo $1
+
+echo "Nextcloud"
 exit 0

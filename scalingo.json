@@ -4,6 +4,7 @@
     "keywords": [
       "nextcloud", "stockage"
     ],
+    "env": {},
     "addons": ["postgresql:postgresql-sandbox"],
     "formation": {
       "web": {
