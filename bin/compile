@@ -40,7 +40,7 @@ echo -n "-----> Downloading Nextcloud from $NEXTCLOUD_URL/nextcloud-$NEXTCLOUD_V
   gpg --verify nextcloud-$NEXTCLOUD_VERSION.tar.bz2.asc nextcloud-$NEXTCLOUD_VERSION.tar.bz2
 
   echo -n "-----> Extracting archive... "
-  tar -xjvf $NEXTCLOUD_DOWNLOADS/nextcloud-$NEXTCLOUD_VERSION.tar.bz2
+  tar -xjf $NEXTCLOUD_DOWNLOADS/nextcloud-$NEXTCLOUD_VERSION.tar.bz2
   mv "$NEXTCLOUD_DOWNLOADS/nextcloud"/* "$BUILD_DIR"
 )
 echo "done"
