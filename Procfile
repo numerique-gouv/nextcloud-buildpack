@@ -1,1 +1,1 @@
-web: echo "Coucou depuis le Procfile"
+web: bin/nextcloud.sh
