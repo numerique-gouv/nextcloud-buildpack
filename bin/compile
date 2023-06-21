@@ -47,6 +47,10 @@ echo "done"
 
 echo -n "-----> Deleting downloads directory... "
 rm -rf "$NEXTCLOUD_DOWNLOADS"
+
+mkdir -p "$BUILD_DIR/bin"
+cp $basedir/nextcloud.sh "$BUILD_DIR/bin/"
+
 echo "done"
 
 echo "      done building with nextcloud buildpack"
